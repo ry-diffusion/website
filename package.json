@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@astrojs/check": "^0.4.1",
+    "@fontsource-variable/work-sans": "^5.0.17",
+    "@fontsource/space-grotesk": "^5.0.16",
     "astro": "^4.2.3",
+    "sass": "^1.70.0",
     "typescript": "^5.3.3"
   },
   "devDependencies": {

@@ -1,0 +1,28 @@
+---
+import "@fontsource/space-grotesk";
+import { getLangFromUrl } from "../i18n/utils";
+import CSS from "../styles/Base.module.scss";
+const lang = getLangFromUrl(Astro.url);
+---
+
+<html lang={lang}>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Ryster</title>
+    </head>
+
+    <body class={CSS.Base}>
+        <slot />
+    </body>
+</html>
+
+<style is:global lang="scss">
+    @use "../styles/Pallete.scss" as p;
+
+    * {
+        font-family: "Space Grotesk";
+        color: p.$textColor;
+    }
+</style>

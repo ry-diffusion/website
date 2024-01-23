@@ -1,0 +1,5 @@
+@use "Pallete.scss" as p;
+
+.Base {
+    background-color: p.$pageBackground;
+}
