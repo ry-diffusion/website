@@ -18,14 +18,11 @@
 .Button:hover {
     color: p.$text2Color;
     transform: scale(1.2);
-    background-color: rgba(p.$primary, 0.4);
-    backdrop-filter: blur(25px);
+    background-color: rgba(p.$primary, 1);
+    // backdrop-filter: blur(25px);
+    // -webkit-backdrop-filter: blur(25px);
     border-radius: 25px;
 
-
-    .Button {
-        background: none;
-    }
 
     .Icon {
         transform: scale3d(1, -1, 1);
