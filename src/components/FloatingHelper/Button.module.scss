@@ -1,0 +1,71 @@
+@use "../../styles/Pallete.scss" as p;
+
+.Button {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+
+    padding: 1em;
+
+
+    text-align: center;
+    flex-wrap: wrap;
+
+    transition: transform 0.2s ease;
+
+}
+
+.Button:hover {
+    color: p.$text2Color;
+    transform: scale(1.2);
+    background-color: rgba(p.$primary, 0.4);
+    backdrop-filter: blur(25px);
+    border-radius: 25px;
+
+
+
+
+    .Icon {
+        transform: scale3d(1, -1, 1);
+    }
+
+    .Separator {
+        display: block;
+    }
+
+
+    .Text {
+        display: block;
+        position: inherit;
+
+    }
+}
+
+
+
+.Icon {
+    display: block;
+    text-align: center;
+    margin: auto;
+
+    font-size: 1em;
+    transition: all 0.2s ease;
+}
+
+.Text {
+    transition: all 0.5s ease;
+
+
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+
+    position: absolute;
+    display: none;
+}
+
+.Separator {
+    display: none;
+
+    padding-right: 5px;
+}

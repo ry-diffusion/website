@@ -1,10 +1,12 @@
 ---
-import Base from "../../layouts/Base.astro";
+import Helper from "@components/FloatingHelper/Helper.astro";
+import Base from "@layouts/Base.astro";
 ---
 
 <Base>
     <div id="yolo">
         <img
+            class="pfp"
             src="https://github.com/ry-diffusion.png"
             alt="pfp"
             decoding="async"
@@ -16,12 +18,23 @@ import Base from "../../layouts/Base.astro";
         <h3>Hello!</h3>
 
         <p>I am Ryster! Just a guy that likes coding.</p>
+
+        <Helper />
     </div>
 </Base>
 
 <style lang="scss">
     @use "../../styles/Pallete.scss" as p;
     @import url("https://fonts.googleapis.com/css?family=Kanit:900");
+
+    h3 {
+        transition: transform 0.5s ease;
+    }
+
+    h3:hover {
+        cursor: default;
+        transform: scale3d(-1, 1, -3);
+    }
 
     $LIGHTING_FLOOR: 1;
     $LIGHTING_CEIL: 2;
@@ -83,7 +96,7 @@ import Base from "../../layouts/Base.astro";
     h3 {
         transform: translateY(-50%);
         font-family: "Kanit";
-        font-size: 64px;
+        font-size: 48px;
 
         @include text3d(
             adjust-color(p.$text2Color, $lightness: -8%),

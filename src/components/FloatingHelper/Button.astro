@@ -1,0 +1,20 @@
+---
+interface Props {
+    text: string;
+    href: string;
+}
+
+const { href, text } = Astro.props;
+import CSS from "./Button.module.scss";
+---
+
+<a href={href} class={CSS.Button}>
+    <slot class={CSS.Icon} />
+    <span class={CSS.Separator}></span>
+
+    
+    <span class={CSS.Text}>
+        {text}
+    </span>
+    
+</div>
