@@ -1,19 +1,45 @@
 @use "../../styles/Pallete.scss" as p;
 
 
+
+
+
+@media screen and (max-width:600px) {
+    .FloatHelper {
+        bottom: 0;
+        right: 0;
+    }
+}
+
+@media screen and (min-width:600px) {
+    .FloatHelper {
+        bottom: 1rem;
+
+    }
+}
+
+
 .FloatHelper {
-    position: sticky;
-    bottom: 50px;
+    position: fixed;
+    position: -webkit-sticky;
+
+
+
     z-index: 9999;
-    background-color: rgba(p.$primary, 0.5);
+
+    background-color: rgba(p.$primary, 0.3);
+    backdrop-filter: blur(5px);
+
+
     margin: 0.5em;
     border: p.$textColor solid 1px;
     border-radius: 25cap;
-    backdrop-filter: blur(25px);
 
     display: flex;
     flex-direction: row;
 }
+
+
 
 .Svg {
     width: 1.5em;
