@@ -1,13 +1,8 @@
 @use "../../styles/Pallete.scss" as p;
 
-
-
-
-
 @media screen and (max-width:600px) {
     .FloatHelper {
         bottom: 0;
-        right: 0;
     }
 }
 
@@ -35,8 +30,6 @@
     display: flex;
     flex-direction: row;
 }
-
-
 
 .Svg {
     width: 1.5em;
