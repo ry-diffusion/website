@@ -97,6 +97,10 @@ import Base from "@layouts/Base.astro";
         transform: translateY(-50%);
         font-family: "Kanit";
         font-size: 48px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
 
         @include text3d(
             adjust-color(p.$text2Color, $lightness: -8%),
