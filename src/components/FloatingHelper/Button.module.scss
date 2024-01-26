@@ -17,16 +17,16 @@
 
 .Button:hover {
     color: p.$text2Color;
-    transform: scale(1.2);
+    transform: translateY(-10px);
     background-color: rgba(p.$primary, 1);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: 1cm;
     // backdrop-filter: blur(25px);
     // -webkit-backdrop-filter: blur(25px);
     border-radius: 25px;
 
 
-    .Icon {
-        transform: scale3d(1, -1, 1);
-    }
+
 
     .Separator {
         display: block;
@@ -39,7 +39,6 @@
 
     }
 }
-
 
 
 .Icon {
